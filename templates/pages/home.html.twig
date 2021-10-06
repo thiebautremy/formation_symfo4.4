@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<link href="{{ asset('css/styles.css') }}" rel="stylesheet"/>
+<script src="{{ asset('js/script.js') }}"></script>
+<html>
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+    {{dump()}}
+        <h1>{{ page_title }}</h1>
+
+            <h2>Hello {{ username|upper }}!</h2>
+            <p>Vous avez {{notifications|length}} notifications non lues</p>
+
+        
+    </body>
+</html>
